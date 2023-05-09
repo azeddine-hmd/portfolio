@@ -9,3 +9,10 @@
 .container-item {
 
 }
+
+.container-item-img {
+	width: 258px;
+	height: 258px;
+	border-radius: 50%;
+	box-shadow: 0 0 0.875rem 0 #a3a3a3;
+}
