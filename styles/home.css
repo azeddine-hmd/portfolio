@@ -1,18 +1,19 @@
-.container {
+.home-container {
 	display: inline-flex;
-	height: 100%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 50rem;
 }
 
-.container-item {
+.home-container-item {
 
 }
 
-.container-item-img {
+.home-container-item-img {
 	width: 258px;
 	height: 258px;
 	border-radius: 50%;
 	box-shadow: 0 0 0.875rem 0 #a3a3a3;
+	opacity: 100%;
 }
