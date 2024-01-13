@@ -7,10 +7,17 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import Link from "next/link";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
+  const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.5});
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] scroll-mt-72 text-center sm:mb-0"
+    >
       <div>
         <div className="flex flex-col items-center justify-center">
           <motion.div
@@ -69,14 +76,18 @@ export default function Intro() {
               <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
             </a>
 
-            <a className="flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 outline-none transition-all hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 cursor-pointer"
-              href="https://linkedin.com/in/azeddine-hamdaoui-5a36b7186" target="_blank"
+            <a
+              className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 outline-none transition-all hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+              href="https://linkedin.com/in/azeddine-hamdaoui-5a36b7186"
+              target="_blank"
             >
               <BsLinkedin />
             </a>
 
-            <a className="flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 outline-none transition-all hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 cursor-pointer"
-              href="https://github.com/azeddine-hmd" target="_blank"
+            <a
+              className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 outline-none transition-all hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+              href="https://github.com/azeddine-hmd"
+              target="_blank"
             >
               <FaGithubSquare />
             </a>
