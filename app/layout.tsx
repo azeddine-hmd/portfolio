@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={clsx(
           inter.className,
-          "relative h-[5000px]  bg-gray-50 text-gray-950 pt-28 sm:pt-36",
+          "relative bg-gray-50 text-gray-950 pt-28 sm:pt-36",
         )}
       >
         <div className="absolute right-[11rem] top-[-6rem] -z-50 h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem]"></div>

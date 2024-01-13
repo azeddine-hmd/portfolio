@@ -20,6 +20,7 @@ export default function Experience() {
     <section
       ref={ref}
       id="experience"
+      className="scroll-mt-28 mb-28 sm:40"
     >
       <SectionHeading>My Experience</SectionHeading>
       <VerticalTimeline>
@@ -40,7 +41,6 @@ export default function Experience() {
               icon={item.icon}
               iconStyle={{
                 background: "white",
-                fontSize: "1.5rem",
               }}
             >
               <h3>{item.title}</h3>
