@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import clsx from "clsx";
 import Header from "@/components/home/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header />
           {children}
+          <Toaster position="top-right" />
         </ActiveSectionContextProvider>
       </body>
     </html>

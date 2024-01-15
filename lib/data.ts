@@ -51,7 +51,7 @@ export const projects = [
   {
     title: "Transcendence",
     description:
-      "Transcendence is an online Ping Pong game. a fullstack app where users can login and create chatrooms, spectate live games, 2AF, access leaderboard and more.",
+      "Transcendence is an online Ping Pong game. Users can login and create chatrooms, spectate live games, 2AF, access leaderboard and more.",
     tags: ["React", "Next.js", "Nestjs", "Socket.IO", "Postgresql"],
     imageUrl: FtTranscendence,
   },
