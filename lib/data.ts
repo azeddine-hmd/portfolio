@@ -1,5 +1,5 @@
 import ChichatImg from "@/public/static/chichat.png";
-import MinishellImg from "@/public/static/minishell.png";
+import MinishellImg from "@/public/static/minishell.jpeg";
 import Cub3dImg from "@/public/static/cub3d.png";
 import FtTranscendence from "@/public/static/ft_transcendence.png";
 import { LuGraduationCap } from "react-icons/lu";
