@@ -8,10 +8,6 @@ html {
 
 html.dark {
 	--line-color: rgba(255, 255, 255, 0.2);
-
-	* {
-		--focus-outline: 3px solid rgba(255, 255, 255, 0.8);
-	}
 }
 
 .borderBlack {
@@ -21,13 +17,4 @@ html.dark {
 .object-top-30 {
 	object-fit: cover;
 	object-position: 40% 0%;
-}
-
-* {
-	--focus-outline: 3px solid black;
-}
-
-
-*:focus {
-	outline: var(--focus-outline);
 }
