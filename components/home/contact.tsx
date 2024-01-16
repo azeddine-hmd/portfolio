@@ -42,7 +42,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="-mt-6 text-gray-700">
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}
         <a
           href="mailto:azeddine.hmd@gmail.com"
@@ -52,12 +52,15 @@ export default function Contact() {
         </a>{" "}
         or through this form.
       </p>
-      <form className="mt-10 flex flex-col gap-2" action={sendEmailHandler}>
+      <form
+        className="mt-10 flex flex-col gap-2 dark:text-black"
+        action={sendEmailHandler}
+      >
         {" "}
         <input
           name="senderEmail"
           type="email"
-          className="borderBlack h-14 rounded-lg px-4"
+          className="borderBlack h-14 rounded-lg px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           placeholder="Your email"
           required
           maxLength={250}
@@ -66,7 +69,7 @@ export default function Contact() {
           <input
             name="firstName"
             type="text"
-            className="borderBlack h-14 w-full rounded-lg px-4"
+            className="borderBlack h-14 w-full rounded-lg px-4 dark:bg-white dark:bg-opacity-80 dark:outline-none  dark:focus:bg-opacity-100"
             placeholder="First name"
             required
             maxLength={50}
@@ -74,7 +77,7 @@ export default function Contact() {
           <input
             name="lastName"
             type="text"
-            className="borderBlack h-14 w-full rounded-lg px-4"
+            className="borderBlack h-14 w-full rounded-lg px-4 dark:bg-white dark:bg-opacity-80 dark:outline-none  dark:focus:bg-opacity-100"
             placeholder="Last name"
             required
             maxLength={50}
@@ -82,7 +85,7 @@ export default function Contact() {
         </div>
         <textarea
           name="message"
-          className="borderBlack my-3 h-52 rounded-lg p-4"
+          className="borderBlack my-3 h-52 rounded-lg p-4 dark:bg-white dark:bg-opacity-80 dark:outline-none  dark:focus:bg-opacity-100"
           placeholder="Your message"
           required
           maxLength={5000}

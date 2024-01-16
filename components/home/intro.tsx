@@ -74,7 +74,7 @@ export default function Intro() {
             </Link>
 
             <a
-              className="group flex cursor-pointer items-center gap-2 rounded-full borderBlack bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
+              className="group flex cursor-pointer items-center gap-2 rounded-full borderBlack bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
               href="/static/azeddine-cv.pdf"
               download
             >
@@ -83,7 +83,7 @@ export default function Intro() {
             </a>
 
             <a
-              className="flex cursor-pointer items-center gap-2 rounded-full borderBlack bg-white p-4 text-gray-700 outline-none transition-all hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+              className="flex cursor-pointer items-center gap-2 rounded-full borderBlack bg-white p-4 text-gray-700 outline-none transition-all hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80"
               href="https://linkedin.com/in/azeddine-hamdaoui-5a36b7186"
               target="_blank"
             >
@@ -91,8 +91,8 @@ export default function Intro() {
             </a>
 
             <a
-              className="flex cursor-pointer items-center gap-2 rounded-full borderBlack bg-white p-4 text-gray-700 outline-none transition-all hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
-              href="https://github.com/azeddine-hmd"
+              className="flex cursor-pointer items-center gap-2 rounded-full borderBlack bg-white p-4 text-gray-700 outline-none transition-all hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80"
+              href="https://github.com/azeddine-hmd "
               target="_blank"
             >
               <FaGithubSquare />

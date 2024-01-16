@@ -33,7 +33,7 @@ export default function ActiveSectionContextProvider({ children }: ActiveSection
 }
 
 export function useActiveSectionContext() {
-  const context = useContext(ActiveSectionContext)!;
+  const context = useContext(ActiveSectionContext);
 
   if (context === null) throw new Error("useActiveSectionContext must be used within an ActiveSectionContextProvider");
 
