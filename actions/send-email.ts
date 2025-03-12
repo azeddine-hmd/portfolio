@@ -3,7 +3,6 @@
 import { getErrorMessage, validateString } from "@/lib/utils";
 import { Resend } from "resend";
 import ContactFormEmail from "@/email/contact-form-email";
-import React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -24,12 +23,12 @@ export async function sendEmail(formData: FormData) {
       from: `Contact Porfolio <noreply@email.azeddine.xyz>`,
       to: [senderEmail as string],
       subject: "request for contact",
-      react: React.createElement(ContactFormEmail, {
-        firstName: firstName as string,
-        lastName: lastName as string,
-        senderEmail: senderEmail as string,
-        message: message as string,
-      }),
+      react: ContactFormEmail({
+          firstName: firstName as string,
+          lastName: lastName as string,
+          senderEmail: senderEmail as string,
+          message: message as string,
+        }),
     });
     console.error("resend-error:", error);
     return {
@@ -38,6 +37,12 @@ export async function sendEmail(formData: FormData) {
     }
   } catch (error) {
     console.error("resend-exception:", error);
+    if (error instanceof Error) {
+      console.error("cause:", error.cause);
+      console.error("name:", error.name);
+      console.error("stack:", error.stack);
+      console.error("message:", error.message);
+    }
     return {
       error: getErrorMessage(error),
     };
