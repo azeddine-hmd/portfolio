@@ -2,6 +2,7 @@ import ChichatImg from "@/public/static/chichat.png";
 import MinishellImg from "@/public/static/minishell.jpeg";
 import Cub3dImg from "@/public/static/cub3d.png";
 import FtTranscendence from "@/public/static/ft_transcendence.png";
+import Holameet from "@/public/static/holameet.png";
 import { LuGraduationCap } from "react-icons/lu";
 import { CgWorkAlt } from "react-icons/cg";
 import React from "react";
@@ -47,6 +48,21 @@ export const projects = [
       "Tailwind",
     ],
     imageUrl: ChichatImg,
+    github: "https://github.com/azeddine-hmd/chichat",
+    demo: "https://chichat.azeddine.xyz",
+  },
+  {
+    title: "Holameet",
+    description: "website for meeting random people and chatting with them via text or voise chat and video",
+    tags: [
+      "React",
+      "Tailwind",
+      "WebRTC",
+      "Socket.IO",
+    ],
+    imageUrl: Holameet,
+    github: "https://github.com/azeddine-hmd/holameet",
+    demo: "https://holameet.azeddine.xyz",
   },
   {
     title: "Transcendence",
@@ -54,6 +70,8 @@ export const projects = [
       "Transcendence is an online Ping Pong game. Users can login and create chatrooms, spectate live games, 2AF, access leaderboard and more.",
     tags: ["React", "Next.js", "Nestjs", "Socket.IO", "Postgresql"],
     imageUrl: FtTranscendence,
+    github: "https://github.com/azeddine-hmd/ft_transcendence",
+    demo: null,
   },
   {
     title: "Minishell",
@@ -61,6 +79,8 @@ export const projects = [
       "Minimal unix shell with basic features such as (redirection, pipes, single/double quotes, env expansion, doc-here, etc...) written in c",
     tags: ["c", "shell", "parser"],
     imageUrl: MinishellImg,
+    github: "https://github.com/azeddine-hmd/minishell",
+    demo: null,
   },
   {
     title: "Cub3d",
@@ -68,6 +88,8 @@ export const projects = [
       "Cub3D is a team project at 42 that asks us to create a 3D game engine with miniLibX. This project is inspired by the world-famous 90's game Wolfenstein 3D, which was the first FPS ever.",
     tags: ["c", "raycasting", "graphics"],
     imageUrl: Cub3dImg,
+    github: "https://github.com/azeddine-hmd/cub3d",
+    demo: null,
   },
 ] as const;
 
