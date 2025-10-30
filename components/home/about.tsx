@@ -18,7 +18,7 @@ export default function About() {
 			ref={ref}
 		>
 			<SectionHeading>About me</SectionHeading>
-			<p className="mb-3">
+			<div className="mb-3">
 				<p className="mb-3">
 					{`Hi there, my name is Azeddine Hamdaoui. I am a graduate of `}
 					<span className="font-semibold">{`1337 School, part of the 42 network, `}</span>
@@ -32,7 +32,7 @@ export default function About() {
 				<p>
 					{`I'm passionate about building web applications and enjoy diversifying and deepening my knowledge of technologies, ranging from database design to frontend development.`}
 				</p>
-			</p>
+			</div>
 		</motion.section>
 	);
 }
